@@ -1,6 +1,6 @@
 let numero = 1;
-let intento = 1;
-while(intento <=10){
+let intento = 10;
+while(intento >=0){
     alert(`Numero ${intento}`);
-    intento = intento +1;
+    intento = intento -1;
 }
