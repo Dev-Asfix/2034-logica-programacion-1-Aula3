@@ -1,6 +1,6 @@
-let numero = 1;
-let intento = 10;
-while(intento >=0){
+let numero = prompt("Dame el numero : ");
+let intento = 0;
+while(intento <= numero){
     alert(`Numero ${intento}`);
-    intento = intento -1;
+    intento = intento +1;
 }
