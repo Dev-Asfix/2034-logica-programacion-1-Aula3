@@ -1,15 +1,17 @@
 // Inicializan la variables
 let numero = 0;
-let numeroSecreto = Math.floor(Math.random()*10+1); //Floor redondea , random da valor del 0 < 1 , cuantos numeros y el +1
+let numeroRango = parseInt(prompt("Dame el rango de numeros : "));
+let numeroSecreto = Math.floor(Math.random()*numeroRango+1); //Floor redondea , random da valor del 0 < 1 , cuantos numeros y el +1
 //let palabraVeces = "vez";
 let intentos = 1;
 let maximoIntentos = 3;
+
 
 //Para ver en la consola 
 console.log(numeroSecreto);
 // Bucle while que continúa hasta que 'numero' sea igual a 'numeroSecreto'
 while(numero != numeroSecreto){
-    numero = parseInt(prompt("Dame el numero : "));
+    numero = parseInt(prompt(`Dame el numero del 1 al ${numeroRango}`));
 
     console.log(typeof(numero));
     if(numero == numeroSecreto){
@@ -18,7 +20,7 @@ while(numero != numeroSecreto){
         if(numeroSecreto > numero){
             alert("El numero secreto es Mayor")
         }else {
-            alert("El nnumero secreto es Menor")
+            alert("El numero secreto es Menor")
         }
          // Cambia 'palabraVeces' a "veces" después del primer intento
         //palabraVeces = "veces";
