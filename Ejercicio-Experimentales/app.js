@@ -1,6 +1,7 @@
-let numero = prompt("Dame el numero : ");
-let intento = 0;
-while(intento <= numero){
-    console.log(`Numero ${intento}`);
-    intento = intento +1;
-}
+let valor1 = parseInt(prompt("Valor 1 : "));
+let valor2 = parseInt(prompt("Valor 2 : "));
+
+let resultado = valor1 - valor2;
+
+alert(`La diferencia entre ${valor1} y ${valor2} , es : ${resultado}`);
+console.log(`La diferencia entre ${valor1} y ${valor2} , es : ${resultado}`10)
